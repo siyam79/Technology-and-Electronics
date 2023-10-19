@@ -24,22 +24,20 @@ const Login = () => {
         console.log(email, password);
 
         if (!/(?=.*?[A-Z])(?=.*?[#?!@$%^&*-]).{6,}/.test(password)) {
-            toast.error('please Your passwor capital letter special character and 6 characters ');
+            toast.error('Please Cheack your Email or password');
             return;
         }
 
         signin(email, password)
             .then(res => {
                 console.log(res);
-                // toast.success('login ', res )
-                // navigate( location?.state ? location.state : '/')
+                
                 if (res.user) {
 
                     toast.success('User logged in successfully');
                     setTimeout(() => {
                         navigate(location?.state ? location.state : '/')
                     }, 1000);
-                //    redirect('/')
                 }
 
             }).catch(error => {

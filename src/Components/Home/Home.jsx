@@ -1,41 +1,36 @@
-import { useLoaderData } from "react-router-dom";
+import {  useLoaderData } from "react-router-dom";
 import Banner from "../../Pages/Banner/Banner";
-// import Footer from "../../Pages/Footer/Footer";
-// import Nav from "../../Pages/NavBar/Nav";
-// import NavBar from "../../Pages/NavBar/NavBar";
+import Pricing from "../../Pages/Pricing/Pricing";
+import Contact from "../../Pages/Contact/Contact";
+import Work from "../../Pages/Work/Work";
+import Card from "../../Pages/Card/Card";
 
 
 const Home = () => {
 
-    const brandItems = useLoaderData();
-    console.log(brandItems);
+    const brands = useLoaderData()
+    // console.log(brands);
+
+
+
 
     return (
         <div>
-            {/* <NavBar></NavBar> */}
-            <Banner></Banner>
-            {/* <Nav></Nav> */}
-            <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 ">
-                {
-                    brandItems.map(item => <div key={item.id}>
 
-                        <div className="card w-96   bg-base-100 shadow-xl">
-                            <figure className="px-2 pt-2">
-                                <img src={item.img} alt="Shoes" className="rounded-xl h-64 " />
-                            </figure>
-                            <div className="card-body items-center text-center">
-                                <h2 className="card-title"> {item.brand_name} </h2>
-                                {/* <div className="card-actions">
-                                    <button className="btn btn-primary">Buy Now</button>
-                                </div> */}
-                            </div>
-                        </div>
-                    </div>)
+            <Banner></Banner>
+            <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 ">
+
+                {
+                    brands.map(brand => <Card key={brand.id} brand={brand} ></Card>)
                 }
                 
+
             </div>
 
-            {/* <Footer></Footer> */}
+            <Pricing></Pricing>
+            <Work></Work>
+            <Contact></Contact>
+
         </div>
     );
 };

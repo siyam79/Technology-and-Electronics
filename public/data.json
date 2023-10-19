@@ -1,17 +1,17 @@
  [
         {
             "id": 1,
-            "brand_name": "Apple",
+            "brand_name": "APPLE",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7VoNi09V39WQ3sKXk1OVdRs1o5M3Py8_9rg&usqp=CAU"
         },
         {
             "id": 2,
-            "brand_name": " Samsung",
+            "brand_name": "Samsung",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbXV7iEfbgKw77kzuS-lgeOyzCZfkT_1AAXQ&usqp=CAU"
         },
         {
             "id": 3,
-            "brand_name": " Sony ",
+            "brand_name": "Sony",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTER9yIx44Hl6ETe8jW8twiNlh_qqOcHg262w&usqp=CAU"
         },
         {

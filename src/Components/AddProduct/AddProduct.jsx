@@ -11,14 +11,14 @@ const AddProduct = () => {
         const price = form.price.value;
         const type = form.type.value;
         const description = form.description.value;
-        const brandName = form.brandName.value;
+        const brand_name = form.brand_name.value;
         const rating = form.rating.value;
         // console.log(name, imgage, price, description, rating);
 
         const allProduct = {
             name,
             imgage,
-            brandName,
+            brand_name,
             price,
             type,
             description,
@@ -64,7 +64,7 @@ const AddProduct = () => {
 
                     <div className="mb-4 lg:w-1/2 w-full ">
                         <label className="block text-white  text-md font-semibold mb-2 " htmlFor=""> Brand Name </label>
-                        <input className=" w-full px-4 py-2 text-white border rounded-lg bg-gray-800 focus:outline-none focus:border-blue-500 " type="text" placeholder="Brand Name " name="brandName" required />
+                        <input className=" w-full px-4 py-2 text-white border rounded-lg bg-gray-800 focus:outline-none focus:border-blue-500 " type="text" placeholder="Brand Name " name="brand_name" required />
                     </div>
                 </div>
 
