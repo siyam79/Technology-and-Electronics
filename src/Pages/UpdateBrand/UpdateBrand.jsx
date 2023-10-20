@@ -122,11 +122,11 @@ export default UpdateBrand;
 
 
 // {
-//     "name": "Google Pixel 2",
-//     "image": "https://i.ibb.co/xD5qjQV/HERO-Pixel-Watch-2-width-1000-format-webp.webp",
-//     "brand_name": "Google",
-//     "price": "60",
-//     "type": "Smart Watch",
-//     "description": "From the inside out, Pixel Watch 2 is designed for all-day (and night) wear. Its housing is made from 100% recycled aluminum which makes it 10% lighter than Pixel Watch3 — so it s even more comfortable, especially when you’re sleeping. The crown is also larger and more flush with the circular silhouette for easier access and navigation.",
-//     " rating": 4
+//     "name": "One Plus Nord 3 E ",
+//     "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/11/Upcoming-OnePlus-phones.png",
+//     "brand_name": "One Plus",
+//     "price": "300",
+//     "type": "Smart Phone",
+//     "description": "A China-based manufacturer of Android smartphones. Introduced in 2014, OnePlus models are unlocked Android smartphones with quad-core Snapdragon CPUs and up to 8GB RAM that initially ran the Cyanogen version of Android (Cyanogen was later replaced with the company's own Android-based OxygenOS). ",
+//     " rating": 5
 // }

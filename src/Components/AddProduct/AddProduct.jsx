@@ -41,6 +41,7 @@ const AddProduct = () => {
                         position :"top-center"
                     })
                 }
+                form.reset()
             })
     }
 
