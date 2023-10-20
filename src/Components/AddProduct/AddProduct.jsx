@@ -1,3 +1,4 @@
+import { ToastContainer, toast } from "react-toastify";
 
 
 const AddProduct = () => {
@@ -7,7 +8,7 @@ const AddProduct = () => {
 
         const form = e.target;
         const name = form.name.value;
-        const imgage = form.imgage.value;
+        const image = form.image.value;
         const price = form.price.value;
         const type = form.type.value;
         const description = form.description.value;
@@ -17,7 +18,7 @@ const AddProduct = () => {
 
         const allProduct = {
             name,
-            imgage,
+            image,
             brand_name,
             price,
             type,
@@ -35,6 +36,11 @@ const AddProduct = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+                if (data.insertedId) {
+                    toast.success(" Data Loaded Success Full " , {
+                        position :"top-center"
+                    })
+                }
             })
     }
 
@@ -49,8 +55,8 @@ const AddProduct = () => {
                     </div>
 
                     <div className="mb-4 lg:w-1/2 w-full  ">
-                        <label className="block text-white  text-md font-semibold mb-2 " htmlFor=""> imgage </label>
-                        <input className=" w-full px-4 py-2 text-white border rounded-lg bg-gray-800 focus:outline-none focus:border-blue-500 " type="text" placeholder="image URL " name="imgage" required />
+                        <label className="block text-white  text-md font-semibold mb-2 " htmlFor=""> image </label>
+                        <input className=" w-full px-4 py-2 text-white border rounded-lg bg-gray-800 focus:outline-none focus:border-blue-500 " type="text" placeholder="image URL " name="image" required />
                     </div>
                 </div>
 
@@ -71,11 +77,11 @@ const AddProduct = () => {
                 <div className="lg:flex gap-4 ">
                     <div className="mb-4 lg:w-1/2 w-full ">
                         <label className="block text-white  text-md font-semibold mb-2 " htmlFor="">Rating </label>
-                        <input className=" w-full px-4 py-2 text-white border rounded-lg bg-gray-800 focus:outline-none focus:border-blue-500 " type="number" placeholder="Rating Number " name="rating" required />
+                        <input className=" w-full px-4 py-2 text-white border rounded-lg bg-gray-800 focus:outline-none focus:border-blue-500 " type="text" placeholder="Rating Number " name="rating" required />
                     </div>
                     <div className="mb-4 lg:w-1/2 w-full  ">
                         <label className="block text-white  text-md font-semibold mb-2 " htmlFor="">Type Of </label>
-                        <input className=" w-full px-4 py-2 text-white border rounded-lg bg-gray-800 focus:outline-none focus:border-blue-500 " type="text" placeholder="Type Off " name="type" required />
+                        <input  className=" w-full px-4 py-2 text-white border rounded-lg bg-gray-800 focus:outline-none focus:border-blue-500 " type="text" placeholder="Type Off " name="type" required />
                     </div>
                 </div>
                 <div className="mb-4 ">
@@ -88,6 +94,7 @@ const AddProduct = () => {
                 </div>
             </form>
 
+<ToastContainer></ToastContainer>
         </div>
     );
 };

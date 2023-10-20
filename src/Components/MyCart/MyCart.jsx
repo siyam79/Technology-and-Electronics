@@ -1,12 +1,13 @@
-import { useLoaderData } from "react-router-dom";
+// import { useLoaderData } from "react-router-dom";
 
 const MyCart = () => {
-    const products = useLoaderData()
-    console.log(products);
+    // const products = useLoaderData()
+    // console.log(products);
     return (
         <div className="min-h-min ">
 
-            <h1> all data {products.length} </h1>
+            <h1> my card </h1>
+            {/* <h1> all data {products.length} </h1>
 
 
             {
@@ -23,7 +24,7 @@ const MyCart = () => {
                     </div>
                 </div>)
             }
-
+ */}
 
         </div>
     );
