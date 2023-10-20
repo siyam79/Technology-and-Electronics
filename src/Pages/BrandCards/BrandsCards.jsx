@@ -75,8 +75,8 @@ const BrandsCards = () => {
                             </div>
                             <h1 className="text-2xl  font-extrabold text-pink-600 "> Price ${brandCard?.price} </h1>
                             <div className="card-actions justify-end ">
-                                <div className="badge badge-outline py-4 font-bold "> View Details </div>
-                                <div className="badge badge-outline py-4 font-bold "> Update Details </div>
+                               <Link to='/viewDetails'> <div className="badge badge-outline py-4 font-bold "> View Details </div></Link>
+                                <Link to='/products'><div className="badge badge-outline py-4 font-bold "> Update Details </div></Link>
                             </div>
                         </div>
                     </div>
