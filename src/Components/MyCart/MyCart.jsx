@@ -1,30 +1,31 @@
-// import { useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 
 const MyCart = () => {
-    // const products = useLoaderData()
-    // console.log(products);
+
+    const addCards = useLoaderData()
+    console.log(addCards);
+
+
+
+
+
     return (
-        <div className="min-h-min ">
-
-            <h1> my card </h1>
-            {/* <h1> all data {products.length} </h1>
-
+        <div className="min-h-min w-[80%] mx-auto  grid lg:grid-cols-2 grid-cols-1 gap-6 mt-6  ">
 
             {
-                products.map(product => <div key={product._id}>
-                    <div className="card w-96 bg-base-100 shadow-xl">
-                        <figure><img src={product.imgage} alt="Shoes" /></figure>
+                addCards.map(card => <div key={card._id} >
+                    <div className="card card-compact w-96 bg-base-100 shadow-xl">
+                        <figure><img src= {card.image } alt="Shoes" /></figure>
                         <div className="card-body">
-                            <h2 className="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <h2 className="card-title"> {card.name} </h2>
+                            <p> Price :${card.price} </p>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Buy Now</button>
+                                <button className="btn btn-primary"></button>
                             </div>
                         </div>
                     </div>
                 </div>)
             }
- */}
 
         </div>
     );

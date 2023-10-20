@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
+import Rating from "../Rating/Rating";
 
 const BrandsCards = () => {
     const { brand_name } = useParams();
@@ -73,7 +74,11 @@ const BrandsCards = () => {
                                 <h1 className="text-xl  font-bold "> {brandCard?.type} </h1>
                                 <h1 className="text-xl  font-bold ">Brand : {brandCard.brand_name}</h1>
                             </div>
-                            <h1 className="text-2xl  font-extrabold text-pink-600 "> Price ${brandCard?.price} </h1>
+                            <div className=" flex justify-between items-center px-2 py-2 ">
+                                <h1 className="text-2xl  font-extrabold text-pink-600 "> Price ${brandCard?.price} </h1>
+                                <Rating></Rating>
+                                {/* <h1> {brandCard.rating} </h1> */}
+                            </div>
                             <div className="card-actions justify-end ">
                                 <Link to={`/products/${brandCard._id}`}> <div className="badge badge-outline py-4 font-bold "> View Details </div></Link>
                                 <Link to={`/product/${brandCard._id}`}><div className="badge badge-outline py-4 font-bold "> Update Details </div></Link>

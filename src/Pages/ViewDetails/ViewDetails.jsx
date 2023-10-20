@@ -5,8 +5,24 @@ import {  useLoaderData } from "react-router-dom";
 const ViewDetails = () => {
 
     const singleBrand = useLoaderData()
+   
 
     const addToCard = () => {
+
+        fetch('http://localhost:5000/addcard',{
+            method:"POST",
+            headers:{
+                "content-type" : "application/json"
+            },
+            body:JSON.stringify(singleBrand)
+
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            console.log( data);
+        })
+
+        console.log(singleBrand);
 
     }
 
