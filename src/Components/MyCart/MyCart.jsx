@@ -4,7 +4,7 @@ const MyCart = () => {
 
     const addCards = useLoaderData()
     console.log(addCards);
-
+ 
 
 
 
@@ -14,13 +14,13 @@ const MyCart = () => {
 
             {
                 addCards.map(card => <div key={card._id} >
-                    <div className="card card-compact w-96 bg-base-100 shadow-xl">
-                        <figure><img src= {card.image } alt="Shoes" /></figure>
+                    <div className="card card-compact w-96 h-[400px] bg-cyan-500 shadow-xl">
+                        <figure><img className="w-full " src= {card.image } alt="Shoes" /></figure>
                         <div className="card-body">
-                            <h2 className="card-title"> {card.name} </h2>
-                            <p> Price :${card.price} </p>
+                            <h2 className="card-title text-white "> {card.name} </h2>
+                            <h1 className="text-xl font-bold text-white "> Price :${card.price} </h1>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary"></button>
+                                <button className="bg-pink-600 px-6 py-2 text-white font-bold text-lg rounded-md  "> Deleted </button>
                             </div>
                         </div>
                     </div>
