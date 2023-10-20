@@ -52,10 +52,10 @@ const MyRoute = createBrowserRouter([
                 loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
             },
             {
-                path:"/updateBrand",
-                element:<UpdateBrand></UpdateBrand>
-                
-            }
+                path:"/product/:id",
+                element:<UpdateBrand></UpdateBrand>,
+                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+            },
 
         ]
     }
