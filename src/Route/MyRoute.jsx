@@ -9,6 +9,7 @@ import PrivateRoute from "../Pages/PrivateRoute/PrivateRoute";
 import Error from "../Components/Error/Error";
 import BrandsCards from "../Pages/BrandCards/BrandsCards";
 import ViewDetails from "../Pages/ViewDetails/ViewDetails";
+import UpdateBrand from "../Pages/UpdateBrand/UpdateBrand";
 
 
 const MyRoute = createBrowserRouter([
@@ -49,6 +50,11 @@ const MyRoute = createBrowserRouter([
                 path:"/products/:id",
                 element:<ViewDetails></ViewDetails>,
                 loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+            },
+            {
+                path:"/updateBrand",
+                element:<UpdateBrand></UpdateBrand>
+                
             }
 
         ]

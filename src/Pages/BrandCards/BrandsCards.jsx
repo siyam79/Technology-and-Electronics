@@ -62,8 +62,8 @@ const BrandsCards = () => {
 
             <div className=" max-w-4xl mx-auto grid md:grid-cols-2 grid-cols-1 gap-6 ">
                 {cardBrand.map((brandCard) => (
-                    <div key={brandCard._id} className="card w-full bg-base-100 shadow-xl">
-                        <figure><img src={brandCard?.image} alt="Shoes" /></figure>
+                    <div key={brandCard._id} className="card w-full bg-base-100  shadow-xl">
+                        <figure><img className="h-[300px] w-full " src={brandCard?.image} alt="Shoes" /></figure>
                         <div className="card-body">
                             <h2 className="card-title font-bold ">
                                 {brandCard?.name}
@@ -75,7 +75,7 @@ const BrandsCards = () => {
                             </div>
                             <h1 className="text-2xl  font-extrabold text-pink-600 "> Price ${brandCard?.price} </h1>
                             <div className="card-actions justify-end ">
-                               <Link to='/viewDetails'> <div className="badge badge-outline py-4 font-bold "> View Details </div></Link>
+                                <Link to={`/products/${brandCard._id}`}> <div className="badge badge-outline py-4 font-bold "> View Details </div></Link>
                                 <Link to='/products'><div className="badge badge-outline py-4 font-bold "> Update Details </div></Link>
                             </div>
                         </div>
@@ -87,6 +87,8 @@ const BrandsCards = () => {
 };
 
 export default BrandsCards;
+
+
 
 
 

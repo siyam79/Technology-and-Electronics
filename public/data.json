@@ -1,33 +1,40 @@
- [
-        {
-            "id": 1,
-            "brand_name": "APPLE",
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7VoNi09V39WQ3sKXk1OVdRs1o5M3Py8_9rg&usqp=CAU"
-        },
-        {
-            "id": 2,
-            "brand_name": "Samsung",
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbXV7iEfbgKw77kzuS-lgeOyzCZfkT_1AAXQ&usqp=CAU"
-        },
-        {
-            "id": 3,
-            "brand_name": "Sony",
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTER9yIx44Hl6ETe8jW8twiNlh_qqOcHg262w&usqp=CAU"
-        },
-        {
-            "id": 4,
-            "brand_name": "Google",
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSsgz0eUa_EPojWB_kDgmuxaQFvO5pjFezFA&usqp=CAU"
-        },
-        {
-            "id": 5,
-            "brand_name": "Intel",
-            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvYUMUfTQkGnRAv2euhppWDdDwkHNRe5HYeA&usqp=CAU"
-        },
-        {
-            "id": 6,
-            "brand_name": "One Plus",
-            "img": "https://www.shutterstock.com/image-photo/wuhanchinaoctober-5th-2022-close-oneplus-260nw-2210395545.jpg"
-        }
-    ]
+[
+    {
+        "id": 1,
+        "brand_name": "APPLE",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7VoNi09V39WQ3sKXk1OVdRs1o5M3Py8_9rg&usqp=CAU"
+    },
+    {
+        "id": 2,
+        "brand_name": "Samsung",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbXV7iEfbgKw77kzuS-lgeOyzCZfkT_1AAXQ&usqp=CAU"
+    },
+    {
+        "id": 3,
+        "brand_name": "Sony",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTER9yIx44Hl6ETe8jW8twiNlh_qqOcHg262w&usqp=CAU"
+    },
+    {
+        "id": 4,
+        "brand_name": "Google",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSsgz0eUa_EPojWB_kDgmuxaQFvO5pjFezFA&usqp=CAU"
+    },
+    {
+        "id": 5,
+        "brand_name": "Intel",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvYUMUfTQkGnRAv2euhppWDdDwkHNRe5HYeA&usqp=CAU"
+    },
+    {
+        "id": 6,
+        "brand_name": "One Plus",
+        "img": "https://www.shutterstock.com/image-photo/wuhanchinaoctober-5th-2022-close-oneplus-260nw-2210395545.jpg"
+    }
+]
 
+
+
+
+
+
+
+   
