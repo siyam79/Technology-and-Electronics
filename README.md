@@ -1,6 +1,6 @@
 ## Technology and Electronics
 
-### Project Live Link  >>.   
+### Project Live Link  >>.   https://technology-client-site.web.app/
 
 
 ## projects Feautred 
@@ -20,4 +20,3 @@
 
  ### This project of ours generous boy can login with google and login with google and login with guitar and of course login with email and of course give him im passwords pellet password like pick character then special character then capital later .. 
 
- 

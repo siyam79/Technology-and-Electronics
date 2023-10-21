@@ -7,7 +7,6 @@ const Contact = () => {
 
 
 
-
     return (
         <section id="contact" className=" py-10 px-3 text-white bg-slate-900 ">
             <div className=" text-center mt-8 ">
