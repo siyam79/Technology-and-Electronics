@@ -37,7 +37,7 @@ const AddProduct = () => {
             .then(data => {
                 console.log(data);
                 if (data.insertedId) {
-                    toast.success(" Data Loaded Success Full " , {
+                    toast.success(" Products Add Success Full " , {
                         position :"top-center"
                     })
                 }

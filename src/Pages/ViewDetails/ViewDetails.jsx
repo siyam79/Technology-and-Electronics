@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 
 
 
@@ -24,6 +25,11 @@ const ViewDetails = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+                if (data.insertedId) {
+                    toast.success(" Products Add to My Cart Route  " , {
+                        position :"top-center"
+                    })
+                }
             })
 
         console.log(updateProducts);
@@ -45,6 +51,7 @@ const ViewDetails = () => {
 
                     </div>
                 </div>
+                <ToastContainer></ToastContainer>
             </div>
         </div>
     );

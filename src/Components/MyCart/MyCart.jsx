@@ -7,7 +7,7 @@ const MyCart = () => {
     const addCards = useLoaderData()
     console.log(addCards);
 
-    const [products , setProducts] = useState(addCards)
+    const [deleteProduct , setDeleteProduct] = useState(addCards)
 
     const handleDelete = _id => {
         console.log(_id);
@@ -33,8 +33,8 @@ const MyCart = () => {
                                 'Your Products has been deleted.',
                                 'success'
                             )
-                            const remeingProducts = products.filter(product => product._id !== _id);
-                            setProducts(remeingProducts)
+                            const remeingProducts = deleteProduct.filter(product => product._id !== _id);
+                            setDeleteProduct(remeingProducts)
                         }
                     })
             }
@@ -51,7 +51,7 @@ const MyCart = () => {
         <div className="min-h-min max-w-4xl mx-auto  grid lg:grid-cols-2 grid-cols-1 gap-6 mt-6  ">
 
             {
-                addCards.map(card => <div key={card._id} >
+                deleteProduct.map(card => <div key={card._id} >
                     <div className="card card-compact w-96 mx-auto  h-[400px] bg-cyan-500 shadow-xl">
                         <figure><img className="w-full " src={card.image} alt="Shoes" /></figure>
                         <div className="card-body">
