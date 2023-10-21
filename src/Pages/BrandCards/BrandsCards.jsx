@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
-import Rating from "../Rating/Rating";
-
+import '@smastrom/react-rating/style.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { Rating } from "@smastrom/react-rating";
 const BrandsCards = () => {
     const { brand_name } = useParams();
     const loadedBrand = useLoaderData();
@@ -17,6 +19,11 @@ const BrandsCards = () => {
             setCardBrand(filteredBrands);
         }
     }, [brand_name, loadedBrand]);
+
+
+    useEffect(() => {
+        AOS.init({ duration: 3000 })
+    }, [])
 
 
     if (cardBrand.length === 0) {
@@ -36,6 +43,10 @@ const BrandsCards = () => {
 
         );
     }
+
+
+
+
 
     return (
 
@@ -61,9 +72,10 @@ const BrandsCards = () => {
 
 
 
-            <div className=" max-w-4xl mx-auto grid md:grid-cols-2 grid-cols-1 gap-6 ">
+            <div className=" max-w-4xl mx-auto grid md:grid-cols-2 grid-cols-1 gap-6 " >
                 {cardBrand.map((brandCard) => (
-                    <div key={brandCard._id} className="card w-full bg-base-100  shadow-xl">
+                    <div key={brandCard._id} className="card w-full bg-base-100  shadow-xl" data-aos="fade-up"
+                        data-aos-duration="3000">
                         <figure><img className="h-[300px] w-full " src={brandCard?.image} alt="Shoes" /></figure>
                         <div className="card-body">
                             <h2 className="card-title font-bold ">
@@ -76,8 +88,13 @@ const BrandsCards = () => {
                             </div>
                             <div className=" flex justify-between items-center px-2 py-2 ">
                                 <h1 className="text-2xl  font-extrabold text-pink-600 "> Price ${brandCard?.price} </h1>
-                                <Rating></Rating>
-                                {/* <h1> {brandCard.rating} </h1> */}
+
+                                {/* <h1> Rating : {brandCard.rating} </h1> */}
+                                <Rating
+                                    style={{ maxWidth: 120 }}
+                                    value={brandCard.rating}
+                                    readOnly
+                                />
                             </div>
                             <div className="card-actions justify-end ">
                                 <Link to={`/products/${brandCard._id}`}> <div className="badge badge-outline py-4 font-bold "> View Details </div></Link>

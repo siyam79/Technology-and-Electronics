@@ -4,22 +4,22 @@ const Footer = () => {
     return (
         <div className="mt-2 ">
             <footer className="footer footer-center p-10 bg-slate-900 text-base-content rounded">
-                <nav className="grid grid-flow-col gap-4 text-white">
-                    <Link className="link link-hover">About us</Link>
-                    <Link className="link link-hover">Contact</Link>
-                    <Link className="link link-hover">Jobs</Link>
-                    <Link className="link link-hover">Press kit</Link>
+                <nav className="grid grid-flow-col lg:gap-16 gap-6 text-white">
+                    <Link className="link link-hover lg:font-semibold lg:text-lg">About us</Link>
+                    <Link className="link link-hover lg:font-semibold lg:text-lg">Contact</Link>
+                    <Link className="link link-hover lg:font-semibold lg:text-lg">Jobs</Link>
+                    <Link className="link link-hover lg:font-semibold lg:text-lg">Press kit</Link>
                 </nav>
-                <nav className="grid grid-flow-col gap-4 text-white ">
-                    <Link className="link link-hover">Terms of use</Link>
-                    <Link className="link link-hover">Privacy policy</Link>
-                    <Link className="link link-hover">Cookie policy</Link>
+                <nav className="grid grid-flow-col lg:gap-16 gap-6 text-white ">
+                    <Link className="link link- lg:font-semibold lg:text-lg">Terms of use</Link>
+                    <Link className="link link- lg:font-semibold lg:text-lg">Privacy policy</Link>
+                    <Link className="link link- lg:font-semibold lg:text-lg">Cookie policy</Link>
                 </nav>
-                <nav className="grid grid-flow-col gap-4 text-white ">
-                    <Link className="link link-hover">Branding</Link>
-                    <Link className="link link-hover">Design</Link>
-                    <Link className="link link-hover">Marketing</Link>
-                    <Link className="link link-hover">Advertisement</Link>
+                <nav className="grid grid-flow-col lg:gap-16 gap-6 text-white ">
+                    <Link className="link link-hover lg:font-semibold lg:text-lg ">Branding</Link>
+                    <Link className="link link-hover lg:font-semibold lg:text-lg ">Design</Link>
+                    <Link className="link link-hover lg:font-semibold lg:text-lg ">Marketing</Link>
+                    <Link className="link link-hover lg:font-semibold lg:text-lg ">Advertisement</Link>
                 </nav>
                 <nav className="text-white ">
                     <div className="grid grid-flow-col gap-4">

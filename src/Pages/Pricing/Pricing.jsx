@@ -18,7 +18,8 @@ const Pricing = () => {
 
 
     return (
-        <div className=" md:px-14 p-4 max-w-s mx-auto py-10 mt-1 ">
+        <div className=" md:px-14 p-4 max-w-s mx-auto py-10 mt-1 " data-aos="fade-up"
+        data-aos-duration="3000">
             <div className="text-center ">
                 <h2 className="md:text-2xl text-xl font-extrabold text-pink-600  "> Here are All Our Plans Subcription </h2>
                 <p className="md:w-1/3 mx-auto px-4 ">A decentralized digital ledger technology securing transactions across the internet, with applications in cryptocurrencies and supply chain transparency.</p>
