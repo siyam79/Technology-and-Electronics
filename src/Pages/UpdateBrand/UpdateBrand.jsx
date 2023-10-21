@@ -30,7 +30,7 @@ const UpdateBrand = () => {
             rating,
         };
         console.log(updateProducts);
-        fetch(`https://technology-and-electronics-chi700f7h-siyam79.vercel.app/product/${updateBrand._id}`, {
+        fetch(`https://technology-and-electronics.vercel.app/product/${updateBrand._id}`, {
             method: "PUT",
             headers: {
                 "content-type": "application/json",

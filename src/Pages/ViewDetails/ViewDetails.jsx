@@ -14,7 +14,7 @@ const ViewDetails = () => {
 
     const addToCard = () => {
 
-        fetch('https://technology-and-electronics-chi700f7h-siyam79.vercel.app/addcard', {
+        fetch('https://technology-and-electronics.vercel.app/addcard', {
             method: "POST",
             headers: {
                 "content-type": "application/json"

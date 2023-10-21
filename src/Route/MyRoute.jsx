@@ -21,7 +21,7 @@ const MyRoute = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                // loader:()=>fetch('https://technology-and-electronics-chi700f7h-siyam79.vercel.app/brands')
+                // loader:()=>fetch('https://technology-and-electronics.vercel.app/brands')
                 loader: () => fetch('data.json')
             },
             {
@@ -31,8 +31,8 @@ const MyRoute = createBrowserRouter([
             {
                 path: '/mycart',
                 element:<PrivateRoute> <MyCart></MyCart></PrivateRoute>,
-                loader: () => fetch('https://technology-and-electronics-chi700f7h-siyam79.vercel.app/addcard')
-                // loader: () => fetch('https://technology-and-electronics-chi700f7h-siyam79.vercel.app/products')
+                loader: () => fetch('https://technology-and-electronics.vercel.app/addcard')
+                // loader: () => fetch('https://technology-and-electronics.vercel.app/products')
             },
             {
                 path: '/login',
@@ -45,17 +45,17 @@ const MyRoute = createBrowserRouter([
             {
                 path: '/brands/:brand_name',
                 element: <BrandsCards></BrandsCards>,
-                loader: () => fetch("https://technology-and-electronics-chi700f7h-siyam79.vercel.app/products")
+                loader: () => fetch("https://technology-and-electronics.vercel.app/products")
             },
             {
                 path: "/products/:id",
                 element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
-                loader: ({ params }) => fetch(`https://technology-and-electronics-chi700f7h-siyam79.vercel.app/products/${params.id}`)
+                loader: ({ params }) => fetch(`https://technology-and-electronics.vercel.app/products/${params.id}`)
             },
             {
                 path: "/product/:id",
                 element: <PrivateRoute><UpdateBrand></UpdateBrand></PrivateRoute>,
-                loader: ({ params }) => fetch(`https://technology-and-electronics-chi700f7h-siyam79.vercel.app/products/${params.id}`)
+                loader: ({ params }) => fetch(`https://technology-and-electronics.vercel.app/products/${params.id}`)
             },
 
         ]
