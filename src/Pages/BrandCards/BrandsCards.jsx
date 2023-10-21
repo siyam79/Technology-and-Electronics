@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import '@smastrom/react-rating/style.css'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { Rating } from "@smastrom/react-rating";
 const BrandsCards = () => {
     const { brand_name } = useParams();
@@ -21,15 +19,10 @@ const BrandsCards = () => {
     }, [brand_name, loadedBrand]);
 
 
-    useEffect(() => {
-        AOS.init({ duration: 3000 })
-    }, [])
-
-
     if (cardBrand.length === 0) {
         return (
 
-            <div className=" w-96 bg-base-100 shadow-xl justify-center items-center  ">
+            <div className=" w-96 bg-base-100 shadow-xl justify-center items-center  " >
                 <figure className="px-10 pt-10 text-center ">
                     <img src="https://t3.ftcdn.net/jpg/01/01/89/46/360_F_101894688_RVSZUtDfPR6Cr5eBDQI7Qo5pZ01jmyK3.webp" alt="Shoes" className="rounded-xl" />
                 </figure>

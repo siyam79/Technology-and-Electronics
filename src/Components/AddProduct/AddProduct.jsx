@@ -26,7 +26,7 @@ const AddProduct = () => {
             rating,
         };
         console.log(allProduct);
-        fetch('http://localhost:5000/products', {
+        fetch('https://technology-and-electronics-chi700f7h-siyam79.vercel.app/products', {
             method: "POST",
             headers: {
                 "content-type": "application/json",

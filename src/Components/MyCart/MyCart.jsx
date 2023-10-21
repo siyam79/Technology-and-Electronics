@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const MyCart = () => {
 
     const addCards = useLoaderData()
     console.log(addCards);
 
-    const [deleteProduct , setDeleteProduct] = useState(addCards)
+    const [deleteProduct, setDeleteProduct] = useState(addCards)
 
     const handleDelete = _id => {
         console.log(_id);
@@ -21,7 +22,7 @@ const MyCart = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/addcard/${_id}`, {
+                fetch(`https://technology-and-electronics-chi700f7h-siyam79.vercel.app/addcard/${_id}`, {
                     method: "DELETE"
                 })
                     .then(res => res.json())
@@ -43,6 +44,9 @@ const MyCart = () => {
     }
 
 
+    useEffect(() => {
+        AOS.init({ duration: 3000 })
+    }, [])
 
 
 
@@ -52,7 +56,8 @@ const MyCart = () => {
 
             {
                 deleteProduct.map(card => <div key={card._id} >
-                    <div className="card card-compact w-96 mx-auto  h-[400px] bg-cyan-500 shadow-xl">
+                    <div className="card card-compact w-96 mx-auto  h-[400px] bg-cyan-500 shadow-xl" data-aos="fade-up"
+                        data-aos-duration="3000">
                         <figure><img className="w-full " src={card.image} alt="Shoes" /></figure>
                         <div className="card-body">
                             <h2 className="card-title text-white text-xl font-bold "> {card.name} </h2>
@@ -65,6 +70,7 @@ const MyCart = () => {
                     </div>
                 </div>)
             }
+
 
         </div>
     );
