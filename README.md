@@ -1,11 +1,21 @@
 ## Technology and Electronics
 
 ### Project Live Link  >>.   https://technology-client-site.web.app/
-## Uses Toola 
+## uses tools 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Client site uses tools
 ### react.js
 ### tailwind.css
 ### firebase
-### ohters npm package
+### jwt localstorage set token 
+### others nmp package 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+## Server site uses tools 
+
+#### node.js 
+#### express.js 
+#### mongodb 
 
 
 ## projects Feautred 
